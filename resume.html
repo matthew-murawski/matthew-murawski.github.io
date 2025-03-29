@@ -12,6 +12,7 @@
          padding: 0;
          background-color: #f8f8f8;
          color: #333;
+         text-align: left; /* Default alignment for body */
        }
  
        .container {
@@ -23,7 +24,7 @@
        }
  
        .header {
-         text-align: center;
+         text-align: center; /* Center only the header content */
          margin-bottom: 1.5em;
        }
  
@@ -37,7 +38,6 @@
          border: 3px solid #eee; /* Optional: adds a light border */
        }
  
- 
        .header h1 {
          font-size: 2em; /* Approximates \LARGE \textbf */
          font-weight: bold;
@@ -50,10 +50,15 @@
          color: #555;
        }
  
+       /* Ensure all section content defaults to left alignment */
+       section {
+         text-align: left;
+       }
+ 
        h2 {
          font-size: 1.2em; /* Approximates \large */
          font-variant: small-caps; /* Approximates \scshape */
-         text-align: left; /* Approximates \raggedright */
+         text-align: left; /* Explicitly left-align */
          font-weight: bold; /* Explicitly bold */
          border-bottom: 1px solid #ccc; /* Approximates \titlerule */
          padding-bottom: 0.2em;
@@ -64,7 +69,7 @@
        h3 {
          font-size: 1em;
          font-variant: small-caps; /* Approximates \scshape */
-         text-align: left;
+         text-align: left; /* Explicitly left-align */
          font-weight: normal; /* \subsection was normal weight */
          margin-top: 1.2em;
          margin-bottom: 0.5em;
@@ -73,6 +78,7 @@
        p {
          margin-top: 0;
          margin-bottom: 0.8em;
+         text-align: left; /* Ensure paragraphs are left-aligned */
        }
  
        ul {
@@ -80,10 +86,12 @@
          margin-top: 0.5em;
          margin-bottom: 1em;
          list-style-type: disc; /* Standard bullet points */
+         text-align: left; /* Ensure lists are left-aligned */
        }
  
        li {
          margin-bottom: 0.4em;
+         text-align: left; /* Ensure list items are left-aligned */
        }
  
        a {
@@ -100,6 +108,7 @@
        .education-header {
          font-weight: bold;
          margin-bottom: 0.3em;
+         text-align: left; /* Ensure these headers are left-aligned */
        }
  
        .job-location,
@@ -123,19 +132,19 @@
          font-weight: bold;
          margin-top: 1em;
          margin-bottom: 0.3em;
+         text-align: left; /* Ensure skill categories are left-aligned */
        }
      </style>
    </head>
    <body>
      <div class="container">
+       <!-- Header section: Centered -->
        <div class="header">
-         <div class="header">
-             <img
-               src="images/face.png"
-               alt="Matthew Murawski profile picture"
-               class="profile-picture"
-             />
- 
+         <img
+           src="images/face.png"
+           alt="Matthew Murawski profile picture"
+           class="profile-picture"
+         />
          <h1>Matthew Murawski</h1>
          <p>Neuroscience & Computer Science Student | Research Assistant</p>
          <p>
@@ -143,6 +152,7 @@
          </p>
        </div>
  
+       <!-- Profile Section: Left-aligned -->
        <section>
          <h2>Profile</h2>
          <p>
@@ -156,6 +166,7 @@
          </p>
        </section>
  
+       <!-- Education Section: Left-aligned -->
        <section>
          <h2>Education</h2>
          <p class="education-header">University of Pittsburgh, Pittsburgh, PA</p>
@@ -168,6 +179,7 @@
          </p>
        </section>
  
+       <!-- Research Experience Section: Left-aligned -->
        <section>
          <h2>Research Experience</h2>
          <p class="job-title">
@@ -206,6 +218,7 @@
          </ul>
        </section>
  
+       <!-- Senior Thesis Section: Left-aligned -->
        <section>
          <h2>Senior Thesis</h2>
          <p>
@@ -236,6 +249,7 @@
          </ul>
        </section>
  
+       <!-- Presentations Section: Left-aligned -->
        <section>
          <h2>Presentations</h2>
          <ul>
@@ -278,6 +292,7 @@
          </ul>
        </section>
  
+       <!-- Teaching Experience Section: Left-aligned -->
        <section>
          <h2>Teaching Experience</h2>
          <p class="job-title">
@@ -304,6 +319,7 @@
          </ul>
        </section>
  
+       <!-- Skills Section: Left-aligned -->
        <section>
          <h2>Technical & Research Skills</h2>
          <p class="skills-category">Research Techniques:</p>
@@ -345,3 +361,4 @@
      </div>
      <!-- End container -->
    </body>
+ </html>
