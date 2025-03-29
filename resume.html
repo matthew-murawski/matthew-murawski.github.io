@@ -152,6 +152,20 @@
          border-radius: 4px; /* Optional: slightly rounded corners */
          list-style-position: inside; /* Keep bullet inside background */
        }
+ 
+       /* --- NEW RULES START --- */
+       /* Target the first paragraph within that specific list item */
+       .presentations-section ul li:first-child p.presentation-title {
+         display: inline; /* Make it flow inline with the bullet */
+         margin-bottom: 0; /* Remove bottom margin for inline flow */
+       }
+ 
+       /* Ensure the emphasis tag starts on a new line */
+       .presentations-section ul li:first-child em {
+         display: block; /* Force onto new line */
+         margin-top: 0.3em; /* Add space above */
+       }
+       /* --- NEW RULES END --- */
      </style>
    </head>
    <body>
@@ -268,12 +282,11 @@
        </section>
  
        <!-- Presentations Section: Left-aligned -->
-       <!-- Added class="presentations-section" -->
        <section class="presentations-section">
          <h2>Presentations</h2>
          <ul>
            <li>
-             <!-- This li will now have the gray background -->
+             <!-- This li has the gray background and modified layout -->
              <p class="presentation-title">
                Poster Presentation
                <span class="presentation-venue">COSYNE 2025</span>
@@ -287,7 +300,7 @@
                href="https://www.world-wide.org/cosyne-25/independent-encoding-salience-value-bc7042a9/"
                target="_blank"
                rel="noopener noreferrer"
-               >View Presentation</a
+               >View Presentation (includes audio overview)</a
              >
              <br />
              <img
