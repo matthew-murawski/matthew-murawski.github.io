@@ -34,28 +34,28 @@
        }
  
        /* Ensure the main header container attempts to center its content */
-        .header {
-        text-align: center;
-        margin-bottom: 1.5em;
-        /* Other header styles */
-        }
-
-        /* Add this rule OR modify existing .header p rule */
-        /* This specifically targets paragraphs inside the header */
-        .header p {
-        font-size: 1em;
-        margin: 0.2em 0;
-        color: #555;
-        text-align: center; /* Explicitly center text for paragraphs in the header */
-        }
-
-        /* Ensure the h1 is also centered (usually inherited, but can be explicit) */
-        .header h1 {
-        font-size: 2em;
-        font-weight: bold;
-        margin-bottom: 0.2em;
-        /* text-align: center; */ /* This is usually inherited correctly */
-        }
+       .header {
+         text-align: center;
+         margin-bottom: 1.5em;
+         /* Other header styles */
+       }
+ 
+       /* Add this rule OR modify existing .header p rule */
+       /* This specifically targets paragraphs inside the header */
+       .header p {
+         font-size: 1em;
+         margin: 0.2em 0;
+         color: #555;
+         text-align: center; /* Explicitly center text for paragraphs in the header */
+       }
+ 
+       /* Ensure the h1 is also centered (usually inherited, but can be explicit) */
+       .header h1 {
+         font-size: 2em;
+         font-weight: bold;
+         margin-bottom: 0.2em;
+         /* text-align: center; */ /* This is usually inherited correctly */
+       }
  
        /* Ensure all section content defaults to left alignment */
        section {
@@ -140,6 +140,17 @@
          margin-top: 1em;
          margin-bottom: 0.3em;
          text-align: left; /* Ensure skill categories are left-aligned */
+       }
+ 
+       /* Style for the presentation item with the poster */
+       .presentations-section ul li:first-child {
+         background-color: #f0f0f0; /* Light gray background */
+         padding: 1em; /* Add space around the content */
+         margin-left: -20px; /* Counteract default ul padding-left */
+         padding-left: 20px; /* Re-apply padding inside the stripe */
+         margin-bottom: 1em; /* Ensure space below */
+         border-radius: 4px; /* Optional: slightly rounded corners */
+         list-style-position: inside; /* Keep bullet inside background */
        }
      </style>
    </head>
@@ -257,10 +268,12 @@
        </section>
  
        <!-- Presentations Section: Left-aligned -->
-       <section>
+       <!-- Added class="presentations-section" -->
+       <section class="presentations-section">
          <h2>Presentations</h2>
          <ul>
            <li>
+             <!-- This li will now have the gray background -->
              <p class="presentation-title">
                Poster Presentation
                <span class="presentation-venue">COSYNE 2025</span>
@@ -276,6 +289,17 @@
                rel="noopener noreferrer"
                >View Presentation</a
              >
+             <br />
+             <img
+               src="images/poster.png"
+               alt="COSYNE 2025 Poster Preview"
+               style="
+                 max-width: 400px;
+                 height: auto;
+                 margin-top: 0.5em;
+                 display: block;
+               "
+             />
            </li>
            <li>
              <p class="presentation-title">
