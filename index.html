@@ -27,6 +27,17 @@
         margin-bottom: 1.5em;
       }
 
+      .profile-picture {
+        display: block; /* Allows margin auto to work for centering */
+        width: 150px; /* Adjust size as needed */
+        height: 150px; /* Make width and height equal for a circle */
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Prevents image stretching if not square */
+        margin: 0 auto 1em auto; /* Centers horizontally, adds space below */
+        border: 3px solid #eee; /* Optional: adds a light border */
+      }
+
+
       .header h1 {
         font-size: 2em; /* Approximates \LARGE \textbf */
         font-weight: bold;
@@ -118,6 +129,23 @@
   <body>
     <div class="container">
       <div class="header">
+        <div class="header">
+            <!-- ADD THIS IMAGE TAG -->
+            <img
+              src="images/face.png"
+              alt="Matthew Murawski profile picture"
+              class="profile-picture"
+            />
+            <!-- END OF ADDED IMAGE TAG -->
+    
+            <h1>Matthew Murawski</h1>
+            <p>Neuroscience & Computer Science Student | Research Assistant</p>
+            <p>
+              <a href="mailto:mam921@pitt.edu">mam921@pitt.edu</a> | (908) 798-2157
+            </p>
+          </div>
+    
+
         <h1>Matthew Murawski</h1>
         <p>Neuroscience & Computer Science Student | Research Assistant</p>
         <p>
