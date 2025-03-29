@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matthew Murawski - Resume</title>
+    <style>
+      /* All original CSS styles from your provided HTML go here */
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        color: #333;
+      }
+
+      .container {
+        max-width: 800px; /* Adjust as needed */
+        margin: 2em auto;
+        padding: 1.5in 1in; /* Approximate 1in margins */
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Removed .header and .profile-picture styles specific to the old header */
+      /* Kept styles needed for the rest of the resume content */
+
+      h2 {
+        font-size: 1.2em; /* Approximates \large */
+        font-variant: small-caps; /* Approximates \scshape */
+        text-align: left; /* Approximates \raggedright */
+        font-weight: bold; /* Explicitly bold */
+        border-bottom: 1px solid #ccc; /* Approximates \titlerule */
+        padding-bottom: 0.2em;
+        margin-top: 1.8em;
+        margin-bottom: 1em;
+      }
+
+      h3 {
+        font-size: 1em;
+        font-variant: small-caps; /* Approximates \scshape */
+        text-align: left;
+        font-weight: normal; /* \subsection was normal weight */
+        margin-top: 1.2em;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0.8em;
+      }
+
+      ul {
+        padding-left: 20px; /* Indent list items */
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        list-style-type: disc; /* Standard bullet points */
+      }
+
+      li {
+        margin-bottom: 0.4em;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .job-title,
+      .presentation-title,
+      .education-header {
+        font-weight: bold;
+        margin-bottom: 0.3em;
+      }
+
+      .job-location,
+      .presentation-venue {
+        float: right;
+        font-weight: normal;
+        font-style: italic;
+        color: #555;
+      }
+
+      /* Clearfix for floated elements */
+      .job-title::after,
+      .presentation-title::after,
+      .education-header::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .skills-category {
+        font-weight: bold;
+        margin-top: 1em;
+        margin-bottom: 0.3em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- The header div with image, name, title, contact was removed -->
+      <!-- Resume content starts here -->
+      <section>
+        <h2>Profile</h2>
+        <p>
+          Highly motivated Neuroscience and Computer Science senior at the
+          University of Pittsburgh with extensive hands-on experience in
+          non-human primate electrophysiology, experimental design, and data
+          analysis. Skilled in designing and fabricating custom experimental
+          apparatuses and in scientific communication. Seeking a research
+          assistant position for a gap year before applying for PhD in
+          Neuroscience.
+        </p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p class="education-header">University of Pittsburgh, Pittsburgh, PA</p>
+        <p>
+          Bachelor of Science in Neuroscience (Major) and Computer Science
+          (Minor)<br />
+          Certificate: Conceptual Foundations of Medicine<br />
+          GPA: 3.71<br />
+          <strong>Expected Graduation:</strong> April 2025
+        </p>
+      </section>
+
+      <section>
+        <h2>Research Experience</h2>
+        <p class="job-title">
+          Research Assistant, Herman Lab
+          <span class="job-location"
+            >University of Pittsburgh --- May 2023 -- Present</span
+          >
+        </p>
+        <ul>
+          <li>
+            Independently conduct visual attention experiments on non-human
+            primates (NHPs).
+          </li>
+          <li>
+            Perform multi-contact electrophysiological recordings during covert
+            visual attention and saccade tasks in superior colliculus (SC),
+            substantia nigra pars compacta (SNc) and lateral geniculate nucleus
+            (LGN)
+          </li>
+          <li>
+            Analyze data from multi-contact electrodes using computational
+            techniques in MATLAB.
+          </li>
+          <li>
+            Analyze inter-areal communication between the SC and SNc using
+            alignment index analysis to elucidate functional connectivity.
+          </li>
+          <li>
+            Design and fabricate 3D printed components for experimental setups
+            using AutoCAD and Nexa3D software.
+          </li>
+          <li>
+            Maintain and troubleshoot experimental software in MATLAB and Linux
+            environments.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Senior Thesis</h2>
+        <p>
+          <strong>
+            "Independent Encoding of Salience, Value, and Attention in Primate
+            Superior Colliculus"
+          </strong>
+        </p>
+        <ul>
+          <li>
+            Recorded 220 superior colliculus (SC) neurons in macaques
+            performing a spatially cued covert change detection task and a
+            saccade task that varied reward value and salience.
+          </li>
+          <li>
+            Investigated how SC activity is modulated by physical salience,
+            reward, and attention cues.
+          </li>
+          <li>
+            Applied single-neuron ROC analyses and population-level support
+            vector machine classification in MATLAB.
+          </li>
+          <li>
+            Findings complicate the unified priority map model, potentially
+            suggesting that independent modulatory influences support
+            context-specific visually guided behaviors.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Presentations</h2>
+        <ul>
+          <li>
+            <p class="presentation-title">
+              Poster Presentation
+              <span class="presentation-venue">COSYNE 2025</span>
+            </p>
+            <em>
+              Independent Encoding of Salience, Value, and Attention in Primate
+              Superior Colliculus
+            </em>
+            <br />
+            <a
+              href="https://www.world-wide.org/cosyne-25/independent-encoding-salience-value-bc7042a9/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Presentation</a
+            >
+          </li>
+          <li>
+            <p class="presentation-title">
+              Talk Presentation
+              <span class="presentation-venue"
+                >VSS 2025 (Attention: neural mechanisms)</span
+              >
+            </p>
+            <em>
+              Independent Encoding of Salience, Value, and Attention in Primate
+              Superior Colliculus
+            </em>
+            <br />
+            <a
+              href="https://www.visionsciences.org/talk-session/?id=501"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Presentation</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Teaching Experience</h2>
+        <p class="job-title">
+          Teaching Assistant, Speaking of Science
+          <span class="job-location">University of Pittsburgh</span>
+        </p>
+        <ul>
+          <li>
+            Assisted in course instruction, helped create class materials, met
+            with students before each presentation, and oversaw class
+            presentations with Drs. Judy Cameron and Susan Sesack.
+          </li>
+        </ul>
+
+        <p class="job-title" style="margin-top: 1em">
+          Teaching Assistant, Intro to Biology 1
+          <span class="job-location">University of Pittsburgh</span>
+        </p>
+        <ul>
+          <li>
+            Supported course instruction and tutored students with Dr. Lesley
+            Ashmore.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Technical & Research Skills</h2>
+        <p class="skills-category">Research Techniques:</p>
+        <ul>
+          <li>
+            Multi-contact single-unit electrophysiological recording in Rhesus
+            macaques.
+          </li>
+          <li>
+            Chairing and managing visual experiments with non-human primates.
+          </li>
+          <li>
+            Single-unit and population-level spike train analysis in MATLAB.
+          </li>
+          <li>
+            Designing & fabricating 3D-printed experimental apparatuses
+            (AutoCAD, Nexa3D).
+          </li>
+        </ul>
+
+        <p class="skills-category">Programming & Data Analysis:</p>
+        <ul>
+          <li>
+            Proficiency in Java, Python, MATLAB, R, SQL, and Unix server
+            management.
+          </li>
+          <li>
+            Statistical modeling and data visualization (MATLAB, Minitab,
+            Excel).
+          </li>
+        </ul>
+
+        <p class="skills-category">Software & Communication:</p>
+        <ul>
+          <li>Extensive experience with Adobe Illustrator and Photoshop.</li>
+          <li>Strong scientific communication and presentation skills.</li>
+        </ul>
+      </section>
+    </div>
+    <!-- End container -->
+  </body>
+</html>
