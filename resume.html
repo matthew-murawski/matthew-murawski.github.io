@@ -109,6 +109,24 @@
        a:hover {
          text-decoration: underline;
        }
+
+       .button {
+            display: inline-block;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
  
        .job-title,
        .presentation-title,
@@ -172,20 +190,21 @@
      <div class="container">
        <!-- Header section: Centered -->
        <div class="header">
-         <img
-           src="images/face.png"
-           alt="Matthew Murawski profile picture"
-           class="profile-picture"
-         />
-         <h1>Matthew Murawski</h1>
-         <p>Neuroscience & Computer Science Student | Research Assistant</p>
-         <p>
-            <a href="mailto:mam921@pitt.edu">mam921@pitt.edu</a>
-          </p>
-          <p>
-            <a href="files/Resume.pdf" download>View as PDF</a>
-          </p>
-       </div>
+        <img
+          src="images/face.png"
+          alt="Matthew Murawski profile picture"
+          class="profile-picture"
+        />
+        <h1>Matthew Murawski</h1>
+        <p>Neuroscience & Computer Science Student | Research Assistant</p>
+        <p>
+          <a href="mailto:mam921@pitt.edu">mam921@pitt.edu</a>
+        </p>
+        <p style="margin-top: 1em;">
+          <a href="files/Matthew_Murawski_Resume.pdf" download class="button">View as PDF</a>
+        </p>
+      </div>
+      
  
        <!-- Profile Section: Left-aligned -->
        <section>
