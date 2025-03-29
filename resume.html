@@ -23,11 +23,6 @@
          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
        }
  
-       .header {
-         text-align: center; /* Center only the header content */
-         margin-bottom: 1.5em;
-       }
- 
        .profile-picture {
          display: block; /* Allows margin auto to work for centering */
          width: 150px; /* Adjust size as needed */
@@ -38,17 +33,29 @@
          border: 3px solid #eee; /* Optional: adds a light border */
        }
  
-       .header h1 {
-         font-size: 2em; /* Approximates \LARGE \textbf */
-         font-weight: bold;
-         margin-bottom: 0.2em;
-       }
- 
-       .header p {
-         font-size: 1em;
-         margin: 0.2em 0;
-         color: #555;
-       }
+       /* Ensure the main header container attempts to center its content */
+        .header {
+        text-align: center;
+        margin-bottom: 1.5em;
+        /* Other header styles */
+        }
+
+        /* Add this rule OR modify existing .header p rule */
+        /* This specifically targets paragraphs inside the header */
+        .header p {
+        font-size: 1em;
+        margin: 0.2em 0;
+        color: #555;
+        text-align: center; /* Explicitly center text for paragraphs in the header */
+        }
+
+        /* Ensure the h1 is also centered (usually inherited, but can be explicit) */
+        .header h1 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 0.2em;
+        /* text-align: center; */ /* This is usually inherited correctly */
+        }
  
        /* Ensure all section content defaults to left alignment */
        section {
